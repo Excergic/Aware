@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     app_name: str = "aware-backend"
     app_version: str = "0.1.0"
     environment: str = "development"
+    database_url: str = "postgresql+asyncpg://user:password@localhost/aware"
 
 
 @lru_cache
