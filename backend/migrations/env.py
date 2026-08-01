@@ -6,6 +6,7 @@ from sqlalchemy import pool
 from sqlalchemy.engine import Connection
 from sqlalchemy.ext.asyncio import async_engine_from_config
 
+from aware_backend import models  # noqa: F401
 from aware_backend.config import get_settings
 from aware_backend.db import Base
 
