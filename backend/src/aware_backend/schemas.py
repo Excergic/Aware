@@ -28,3 +28,14 @@ class TokenPair(BaseModel):
 
 class RefreshRequest(BaseModel):
     refresh_token: str
+
+
+class WebRTCOffer(BaseModel):
+    sdp: str
+    type: str
+
+
+class WebRTCAnswer(BaseModel):
+    sdp: str
+    type: str
+    session_id: uuid.UUID

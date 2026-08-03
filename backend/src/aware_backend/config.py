@@ -17,6 +17,9 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 30
     refresh_token_expire_days: int = 30
 
+    stun_server: str = "stun:stun.l.google.com:19302"
+    frame_sample_interval_seconds: float = 1.0
+
 
 @lru_cache
 def get_settings() -> Settings:

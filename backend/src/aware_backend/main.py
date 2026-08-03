@@ -1,10 +1,11 @@
 from fastapi import FastAPI
 
 from aware_backend.config import get_settings
-from aware_backend.routers import auth
+from aware_backend.routers import auth, webrtc
 
 app = FastAPI(title="Aware Backend")
 app.include_router(auth.router)
+app.include_router(webrtc.router)
 
 
 @app.get("/health")
