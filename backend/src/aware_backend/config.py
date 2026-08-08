@@ -20,6 +20,13 @@ class Settings(BaseSettings):
     stun_server: str = "stun:stun.l.google.com:19302"
     frame_sample_interval_seconds: float = 1.0
 
+    smallest_api_key: str = ""
+    tts_voice_id: str = "emily"
+    tts_sample_rate: int = 24000
+
+    openai_api_key: str = ""
+    openai_model: str = "gpt-4o"  # override in .env with your current model name
+
 
 @lru_cache
 def get_settings() -> Settings:

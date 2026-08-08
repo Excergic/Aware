@@ -14,8 +14,10 @@ dependencies = [
     "asyncpg>=0.31.0",
     "email-validator>=2.3.0",
     "fastapi>=0.141.1",
+    "pillow>=12.3.0",
     "pydantic-settings>=2.14.2",
     "pyjwt>=2.13.0",
+    "smallestai>=5.5.0",
     "sqlalchemy[asyncio]>=2.0.51",
     "uvicorn[standard]>=0.52.0",
 ]
